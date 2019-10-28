@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<!--
+    
+    Starting Page of Kilimanjaro
+    Author: Olympia Paul
+
+    Filename: hours.html
+   -->
+   <meta charset="utf-8" />
+ <title>Paul</title>
+ <link href="paul_styles.css" rel="stylesheet" />
+ <script src="Paul_script.js"></script>
+</head>
+<body>
+	<header>
+		
+		<nav>
+			<a id="FeaturedRecipes"></a>
+			<ul>
+			 <li><a href="index.html">Home</a></li>
+			 <li><a href="menu.html">Menu</a></li>
+			 <li><a href="hours.html">Hours of Operation</a></li>
+			 <li><a href="order.html">Order Online</a></li>
+			 <li><a href="index.html#FeaturedRecipes">Recipes</a></li>
+			</ul>
+		</nav>
+		
+		<img src="paul_logo.png" alt="kilimanjaro">
+			<h1>The African mountain of Food!</h1>
+	</header>
+	<main>
+	<article>
+		<h2>Hours of Operation!</h2>
+   <table>
+   <caption>*note that events are subject to change</caption>
+  <tr>
+				<th>Day</th>
+				<th>Open</th>
+				<th>Close</th>
+				<th>Daily Event*</th>
+			</tr>
+			<tr>
+				<th id="Sunday">Sunday</th>
+				<td>12pm</td>
+				<td>7pm</td>
+				<td>None</td>
+			</tr>
+			<tr>
+				<th id="Monday">Monday</th>
+				<td>9am</td>
+				<td>10pm</td>
+				<td>Jaro Buffet</td>
+			</tr>
+			<tr>
+				<th id="Tuesday">Tuesday</th>
+				<td>9am</td>
+				<td>10pm</td>
+				<td>Kiddies Fest</td>
+			</tr>
+			<tr>
+				<th id="Wednesday">Wednesday</th>
+				<td colspan="3">Reserved</td>
+			</tr>
+			<tr>
+				<th id="Thursday">Thursday</th>
+				<td>9am</td>
+				<td>12am</td>
+				<td>Karaoke Night</td>
+			</tr>
+			<tr>
+				<th id="Friday">Friday</th>
+				<td>9am</td>
+				<td>2am</td>
+				<td>Jazz Night</td>
+			</tr>
+			<tr>
+				<th id="Saturday">Saturday</th>
+				<td>9am</td>
+				<td>2am</td>
+				<td>Club Night</td>
+			</tr>
+   </table>
+	</article>
+	</main>
+<footer>
+		&copy; Spring 2019 - <a href="mailto:aiwanfo.paul@gmail.com">aiwanfo.paul@gmail.com</a>
+	</footer>
+	<script>
+		document.getElementById("Sunday").addEventListener("click", function() {myDays("none")}, false);
+		document.getElementById("Monday").addEventListener("click", function() {myDays("Jaro Buffet")}, false);
+		document.getElementById("Tuesday").addEventListener("click", function() {myDays("Kiddies Fest")}, false);
+		document.getElementById("Wednesday").addEventListener("click", function() {myDays("none")}, false);
+		document.getElementById("Thursday").addEventListener("click", function() {myDays("Karaoke Night")}, false);
+		document.getElementById("Friday").addEventListener("click", function() {myDays("Jazz Night")}, false);
+		document.getElementById("Saturday").addEventListener("click", function() {myDays("Club Night")}, false);
+	</script>
+</body>
+</html>

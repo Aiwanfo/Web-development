@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/*
+    
+    Starting Page of Kilimanjaro
+    Author: Olympia Paul
+
+    Filename: paul_styles.css
+	
+   */
+   
+html {
+background-image: url(rice.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+/*body styles*/
+
+body {
+  margin: 10px auto 10px;
+  background: white;
+  padding: 2px;
+  font-family: Helvetica, sans-serif, "Palatino Linotype";
+  width: 1000px;
+  border: 5px solid black;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+p {
+	font-size: 17px;
+}
+
+li {
+	font-size: 17px;
+}
+
+main{
+	color: blue;
+	background-image:url(leaf.png);
+	margin: 1px;
+	padding: 10px;
+}
+
+aside{
+	display:block;
+	width:20em;
+	float:right;
+	background-color: white;
+	padding:10px;
+}
+
+article {
+	background-color:#ccffff;
+	border-radius: 20px;
+	padding: 20px;
+	padding-bottom: 100px;
+
+}
+
+aside > p:before{
+	content: open-quote;
+}
+
+aside > p:after{
+	content: close-quote;
+}
+
+
+/*header styles*/
+
+header{
+	color: red;
+	border-bottom: 5px solid black;
+	padding: 10px;
+	background-color: #ff8080;
+	margin: auto;
+	border-radius: 10px;
+}
+
+header > h1{
+	margin: auto;
+	text-align:center;
+}
+
+h2{
+	font-style: italic;
+	color: #880e4f;
+}
+
+/*navigation list*/
+
+nav {
+	padding:2px;
+	background-image:url(leaf.png);
+	border-radius: 10px;
+	float: left;
+}
+
+nav > ul{
+	list-style-type: none;
+	font-weight: bold;
+	display:block;
+	width:10em;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+
+
+nav a {
+	text-decoration: none;
+	color:red;
+}
+
+nav a:hover{
+	background-color: green;
+	color:white;
+}
+
+a{
+	color:red;
+}
+
+
+
+
+/*image styles*/
+
+main img{
+	float:left;
+	border: 2px solid white;
+	margin: 20px;
+	padding: 2px;
+}
+
+ 
+/*description list styles*/
+
+dd{
+	font-style: italic;
+	color: green
+}
+
+dt{
+	font-weight: bold;
+	color: brown;
+	clear: left;
+}
+
+
+
+/*Table Styles*/
+
+table {
+	background-color: white;
+	min-width: 800px;
+	border-collapse: collapse;
+	border: 2px solid #033356;
+	margin: auto;
+}
+
+td,th {
+	padding: 8px;
+	line-height: 1.4em;
+}
+
+caption {
+	caption-side: bottom;
+	text-align: left;
+	padding-top: 15px;
+	font-style: italic;
+	color: red;
+}
+
+th {
+	width: 19%;
+
+}
+
+td {
+	font-size: 0.9em;
+}
+
+caption {
+	caption-side: bottom;
+	text-align: left;
+	padding-top: 15px;
+	font-style: italic;
+	color: green;
+}
+
+tr:nth-of-type(odd) {
+	background-color: white;
+	color: black;
+}
+
+tr:nth-of-type(even) {
+	background-color: #ff8080;
+	color: white;
+	border-radius: 10px;
+}
+
+tr:first-of-type th:first-of-type {
+	width: 24%;
+	font-size: 1.2em;
+	border-bottom: 3px solid black;
+	background-color: brown;
+	color: orange;
+}
+
+th:not(:first-of-type) {
+	font-size: 1.2em;
+	border-bottom: 3px solid black;
+	background-color: brown;
+	color: orange;
+}
+
+td[colspan] {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+
+/*Form Styles*/
+form {
+	background-color: white;
+	margin: auto;
+	width: 75%;
+}
+
+fieldset {
+	background-color: pink;
+	padding: 20px;
+	border: 3px solid red;
+	margin: 10px;
+	border-radius: 15px 50px;
+	color: black;
+}
+
+legend {
+	background-color: orange;
+	border-radius: 40%;
+	padding: 4px;
+	color: white;
+	font-size: 1.2em;
+	margin: 2px;
+}
+
+label{
+	display: inline-block;
+	width: 45%;
+}
+input {
+	margin: 2px;
+}
+
+input[type="submit"]{
+	display: block;
+	width: 25%;
+	margin: 15px auto auto auto;
+	padding: 5px 15px;
+	background-color: red;
+	color: white;
+	font-size: 1.1em;
+	border-radius: 15px 50px;
+}
+	
+/*footer Styles*/
+
+footer{
+	color: green;
+	background:#ff8080 ;
+	border: 1px solid black;
+	padding: 10px;
+	margin:1px;
+	border-radius: 10px;
+}

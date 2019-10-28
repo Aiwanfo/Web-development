@@ -1,0 +1,75 @@
+function upcomingEvents(){
+	document.write("<ol>");
+	document.write("<li>Meet the Zebras</li>");
+	document.write("<li>Meet the Gorillas</li>");
+	document.write("<li>Meet the Rhinoceros</li>");
+	document.write("<li>Meet the Chimpanzees</li>");
+	document.write("</ol>");
+	
+}
+
+
+function adopt(e){
+	if(name.value && email.value && phone.value && age.value){
+		alert('Thank You');
+	}else{
+		alert('Please fill out the form');
+		e.preventDefault();
+	}
+}
+
+function classify(){
+	var col1 =["Animal","Western Black Rhinoceros","Grevy's Zebras","African Mountain Gorillas","Rothschild's Giraffes"
+			,"Chimpanzees","Cheetah","Oribi"];
+			
+	var col2 = ["Scientific Name","Diceros bicornis longipes","Equus grevyi","Gorilla beringei beringi",
+				"Giraffa camelopardalis rothschildi","Pan","Acinonyx jubatus","Ourebia ourebi"];
+	
+	var col3 = ["Diet","Herbivorous browser","Herbivore","Folivore","Herbivore","Omnivorous frugivore",
+				"Carnivore","Grazer"];
+	
+	var col4 = ["Conservation Status","Critically Endangered","Endangered","Critically Endangered",
+				"Endangered","Endangered","Vulnerable","Vulnerable"];	
+				
+				
+	document.write("<tr><th>" + col1[0] + "</th>" + "<th>" + col2[0] + "</th>" + "<th>" + col3[0] + "</th>" 
+					+ "<th>" + col4[0] + "</th></tr>" );	
+					
+					
+					
+	for (var itr = 1; itr < col1.length ; itr++ ){
+		document.write("<tr><th>" + col1[itr] + "</th>" + "<td>" + col2[itr] + "</td>" + "<td>" + col3[itr] + "</td>" 
+					+ "<td>" + col4[itr] + "</td></tr>");
+	}				
+		
+				
+		
+	
+}
+
+function animal(nbc){
+	alert('You clicked on the ' + nbc + "'s picture");
+}
+
+
+
+<h2>Upcoming Events</h2>
+	<script>
+	upcomingEvents();
+	</script>
+
+<script>
+	document.getElementById("adopt").addEventListener("submit",adopt(),false);
+</script>
+
+
+var rows = document.getElementsByTagName('img');
+var rowL= rows.length;
+for(var i=1;i<=rowL;i++){
+	rows[i].addEventListener("click",function(){animal(this.alt);});
+}
+
+
+<script>
+	classify();
+</script>

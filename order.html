@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<!--
+    
+    Starting Page of Kilimanjaro
+    Author: Olympia Paul
+
+    Filename: order.html
+   -->
+   <meta charset="utf-8" />
+<title>Paul</title>
+<link href="paul_styles.css" rel="stylesheet" />
+<script src="Paul_script.js"></script>
+</head>
+<body>
+	<header>
+		
+		<nav>
+			<a id="FeaturedRecipes"></a>
+			<ul>
+			 <li><a href="index.html">Home</a></li>
+			 <li><a href="menu.html">Menu</a></li>
+			 <li><a href="hours.html">Hours of Operation</a></li>
+			 <li><a href="order.html">Order Online</a></li>
+			 <li><a href="index.html#FeaturedRecipes">Recipes</a></li>
+			</ul>
+		</nav>
+		
+		<img src="paul_logo.png" alt="kilimanjaro">
+			<h1>The African mountain of Food!</h1>
+	</header>
+	<main>
+	<article>
+		<h2>Order Online!</h2>
+		
+	<form id="order" action="formProcessor.html" method="GET">
+		
+
+		<fieldset id="custinfo">
+		<legend>Customer Information</legend>
+			<label for="name">Name:</label>
+			<input type="text" name="Name" id="name">
+		
+			<label for="phone">Phone Number:</label>
+			<input type="tel" name="Phone" id="phone">
+		
+			<label for="mail">E-mail:</label>
+			<input type="email" name="Email" id="mail">
+		
+			<label for="age">Age:</label>
+			<input type="Number" name="Age" id="age" min="18" max="100" step="1">
+		</fieldset>
+		
+		
+		<fieldset id="menuitem">
+		<legend>Order Information</legend>
+			<label for="menu">Menu Item</label>
+			<select name="Meal" id="menu">
+				<option value="">&nbsp;</option>
+				<option value="rice">Fried rice</option>
+				<option value="beans">Moin moin</option>
+				<option value="meat">Suya</option>
+				<option value="soup">Pepper soup</option>
+				<option value="egusi">Egusi Soup</option>
+				<option value="okro">Okra soup</option>
+				<option value="stew">Tomato Stew</option>
+			</select>
+			
+		<p>Meal Add-On:</p>
+			<input type="checkbox" name="Drink" value="beverage" id="ordbev" checked />
+			<label for="ordbev">Drink</label>
+			
+			<input type="checkbox" name="Salad" value="salad" id="ordside">
+			<label for="ordside">Salad</label><br>
+			
+			<input type="checkbox" name="Sauce" value="sauce" id="ordsauce">
+			<label for="ordsauce">Sauces</label>
+			
+			<input type="checkbox" name="Appetizer" value="appetizer" id="ordapp">
+			<label for="ordapp">Appetizer</label><br>
+			
+			<input type="checkbox" name="Desert" value="desert" id="orddes" checked />
+			<label for="orddes">Desert</label>
+			
+		</fieldset>
+			
+		
+		<fieldset id="delivery">
+		<legend>Delivery Information</legend>
+			<label for="deldate">Delivery Date:</label>
+			<input type="date" name="Date" id="deldate"><br>
+			
+			<label for="rangeBox">Delivery Time Frame:</label>
+               ASAP
+            <input type="range" name="Range" id="rangeBox" value="1" min="1" max="3" />
+               Later
+			   
+			<p>Delivery Options:</p>  
+			<input type="radio" name="deliveryop" value="Grubhub" id="delOption1">
+			<label for="delOption1">Grubhub</label>
+			
+			<input type="radio" name="deliveryop" value="Postmates" id="delOption2">
+			<label for="delOption2">Postmates</label><br>
+			
+			<input type="radio" name="deliveryop" value="Uber Eats" id="delOption3">
+			<label for="delOption3">Uber Eats</label>
+			
+			<input type="radio" name="deliveryop" value="DoorDash" id="delOption4">
+			<label for="delOption4">DoorDash</label><br>
+			
+			<input type="radio" name="deliveryop" value="local store" id="delOption5">
+			<label for="delOption5">local store</label>
+			
+			<input type="radio" name="deliveryop" value="Business" id="delOption6">
+			<label for="delOption6">Business</label>
+			
+		</fieldset>
+		
+		
+            <input type="submit" value="Place Your Order!" />
+		
+	</form>
+	</article>
+	</main>
+
+	<footer>
+		&copy; Spring 2019 - <a href="mailto:aiwanfo.paul@gmail.com">aiwanfo.paul@gmail.com</a>
+	</footer>
+	<script>
+		document.getElementById("order").addEventListener("submit", order, false);
+	</script>
+</body>
+</html>
